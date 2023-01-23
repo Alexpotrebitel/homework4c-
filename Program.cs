@@ -35,12 +35,12 @@ int result=Number(a);
 Console.WriteLine($"Сумма цифр числа равна {Number(a)}");
 */
 //Задача 29: Напишите программу, которая задаёт массив из m элементов и выводит их на экран.
-/*int [] CreateArray(int size)
+int [] CreateArray(int size)
 {
     int[] array=new int [size];
     for(int i=0; i<size;i++)
     {
-       Console.Write("Введите элемент массива {0}: ", i);
+       Console.Write($"Введите элемент массива {i+1}: ");
         array[i] = Convert.ToInt32(Console.ReadLine());
     }
     return array;
@@ -56,5 +56,5 @@ void ShowArray(int[] array)
 Console.WriteLine("Введите колличество эллементов массива: ");
 int  Length = Convert.ToInt32(Console.ReadLine());
 int [] newArray=CreateArray( Length);
-ShowArray(CreateArray( Length));
-*/
+ShowArray(newArray);
+
